@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stone Paper Scissor</title>
+  <link href="minigame.css" rel="stylesheet">
+  <script src="minigame.js"></script>
+</head>
+<body>
+  <h1 id="title" class="gradient">Stone Paper Scissor</h1>
+
+  <div id="pname">
+    <input type="text" id="pnameinput" placeholder="Enter your name">
+    <button onclick="Startgame()">Start Game</button>
+  </div>
+  
+  <div id="games">
+    <div class="game-buttons">
+      <button onclick="playGame('stone')">🪨 Stone</button>
+      <button onclick="playGame('paper')">📄 Paper</button>
+      <button onclick="playGame('scissors')">✂ Scissor</button>
+    </div>
+
+    <div id="scoreboard" style="margin-top: 20px; color: white; font-size: 18px;">
+      <strong id="playerScore">You: 0</strong>&nbsp;&nbsp;
+      <strong id="compScore">Computer: 0</strong>
+    </div>
+
+    <div id="congrats" style="display: none;color: #ff00ff;font-size: 24px; margin-top: 15px;font-weight: bold;"></div>
+    <div id="result"></div>
+    <button id="play-again" onclick="resetGame()">Reset Game</button>
+  </div>
+</body>
+</html>
